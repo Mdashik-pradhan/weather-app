@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>Weather</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .weather-container {
+            background-image: url('./images/bg-img.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+        }
+        .over-lay {
+            background-color: rgba(27, 1, 1, 0.562);
+            height: 100vh;
+        }
+        .weather-button {
+            background-color: rgb(255, 0, 64);
+            border: none;
+            border-radius: 0 5px  5px;
+            color: white;
+            padding: 2px 20px;
+            font-size: 25px;
+            /* padding-bottom: 2px; */
+        }
+        .search-result-div {
+            text-align: center;
+            color: #ffffff;
+        }
+        .weather-img {
+            width: 180px;
+            margin-left: 43%;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="weather-container">
+        <div class="over-lay">
+            <div class="input-group mb-3 w-50 mx-auto pt-5">
+                <input id="search-filed" type="text" class="form-control" placeholder="Enter city name"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button onclick="searchCity()" class="weather-button" type="button"
+                    id="button-addon2">Search</button>
+            </div>
+
+            <div id="search-result" class="mt-5 pt-5">
+    
+
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+    </script>
+    <script src="./weather.js"></script>
+</body>
+</html>
