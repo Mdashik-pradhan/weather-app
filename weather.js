@@ -41,4 +41,4 @@ const displayWeather = weatherData => {
             <p>${weather[0].main}</p>
     `;
     searchResult.appendChild(div);
-}
+};
